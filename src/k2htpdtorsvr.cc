@@ -217,9 +217,9 @@ int main(int argc, char** argv)
 	// get configuration option
 	string	config;
 	if(params.end() != params.find("conf")){
-		config = params["conf"].c_str();
+		config = params["conf"];
 	}else if(params.end() != params.find("json")){
-		config = params["json"].c_str();
+		config = params["json"];
 	}
 
 	// make and check info from conf file
